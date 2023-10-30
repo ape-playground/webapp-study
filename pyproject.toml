@@ -16,3 +16,18 @@ exclude = '''
   | node_modules
 )/
 '''
+
+[tool.pylint]
+disable = "C0103, C0114, C0115, C0116, W0611"
+max-line-length = 120
+ignore = ["tests/*"]
+
+
+[tool.pyright]
+include = ["app"]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "src/stubs"
+]
+venvPath = "/opt/homebrew/Caskroom/miniconda/base/envs"
+venv = "webapp"

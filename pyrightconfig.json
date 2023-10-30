@@ -1,0 +1,6 @@
+{
+  "include": ["app"],
+  "exclude": ["**/node_modules", "test"],
+  "venvPath": "/opt/homebrew/Caskroom/miniconda/base/envs",
+  "venv": "webapp"
+}
